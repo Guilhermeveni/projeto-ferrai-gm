@@ -185,7 +185,33 @@ header {
                 font-size: 32px;
             }
         }
-
+        aside {
+            width: 375px;
+            height: calc(100vh - 118px);
+            bottom: 0;
+            z-index: 4;
+            header, section {
+                display: flex;
+            }
+            header {
+                height: 160px;
+            }
+            footer {
+                height: 80px;
+                > div {
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 22px;
+                    .total {
+                        font-size: 29px;
+                    }
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
         footer.fixed {
             justify-content: flex-start;
             button + button, a + a, button + a, a + button {
