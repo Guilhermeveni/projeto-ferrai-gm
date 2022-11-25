@@ -64,26 +64,4 @@
             }
         }
     }
-
-    aside {
-        width: 100%;
-        position: fixed;
-        z-index: 2;
-        right: 0;
-        bottom: 80px;
-        height: 50px;
-        background-color: var(--gray-12);
-        border-bottom: var(--gray-3) 1px solid;
-        flex-direction: column;
-        transition: all 0.2s ease-in-out;
-
-        header {
-            font-size: 2em;
-            color: var(--dark-0);
-            height: 130px;
-            justify-content: center;
-            align-items: center;
-            display: none;
-        }
-    }
 }

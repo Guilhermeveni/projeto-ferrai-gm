@@ -285,6 +285,97 @@ header.page-title hr {
   margin: var(--space);
   width: calc(100% - var(--space) * 2);
 }
+.page aside, .page aside.open {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  bottom: 80px;
+  height: 50px;
+  background-color: var(--gray-12);
+  border-bottom: var(--gray-3) 1px solid;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+.page aside header, .page aside.open header {
+  font-size: 2em;
+  color: var(--dark-0);
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.page aside section, .page aside.open section {
+  padding: 0 var(--space);
+  display: none;
+  flex: 1;
+  max-height: calc(100vh - 339px);
+  overflow-y: auto;
+}
+.page aside section table, .page aside.open section table {
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: var(--gray-3) 1px solid;
+}
+.page aside section table td, .page aside.open section table td {
+  padding: var(--space) 0;
+  border-top: var(--gray-3) 1px solid;
+}
+.page aside section table td.price, .page aside.open section table td.price {
+  text-align: right;
+}
+.page aside footer, .page aside.open footer {
+  height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space);
+  font-size: 18px;
+  color: var(--dark-0);
+}
+.page aside footer .total, .page aside.open footer .total {
+  font-weight: bold;
+  margin-left: var(--space);
+  text-align: right;
+}
+.page aside footer button, .page aside.open footer button {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  min-width: 50px;
+  width: 50px;
+}
+.page aside footer button:hover, .page aside.open footer button:hover {
+  background-color: var(--black-10);
+}
+.page aside footer button:active, .page aside.open footer button:active {
+  background-color: var(--black-75);
+}
+.page aside footer button svg, .page aside.open footer button svg {
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.page aside.open, .page aside.open.open {
+  height: calc(100vh - 158px);
+}
+.page aside.open header, .page aside.open section, .page aside.open.open header, .page aside.open.open section {
+  display: flex;
+}
+.page aside.open footer button svg, .page aside.open.open footer button svg {
+  transform: rotate(180deg);
+}
 .page > header {
   width: 100%;
   min-height: 130px;
@@ -298,6 +389,11 @@ header.page-title hr {
   font-size: 23px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.page > header h1 small {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
 }
 .page > main {
   margin-bottom: 80px;
@@ -1495,25 +1591,9 @@ header.page-title hr {
 .page .options label .content .price {
   font-weight: 600;
 }
-.page aside {
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-  right: 0;
-  bottom: 80px;
-  height: 50px;
-  background-color: var(--gray-12);
-  border-bottom: var(--gray-3) 1px solid;
-  flex-direction: column;
-  transition: all 0.2s ease-in-out;
-}
-.page aside header {
-  font-size: 2em;
-  color: var(--dark-0);
-  height: 130px;
-  justify-content: center;
-  align-items: center;
-  display: none;
+
+#schedules-summary form {
+  margin-top: var(--space);
 }
 
 /*# sourceMappingURL=main.css.map */
