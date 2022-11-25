@@ -1709,7 +1709,7 @@ header.page-title hr {
     width: 100%;
   }
   #schedules-payment > main form .form-creditcard .form-card .faces.flipped {
-    transform: translate(-76px) rotate(180deg);
+    transform: translate(-76px) rotateY(180deg);
   }
   #schedules-payment > main form .form-creditcard .form-card .faces svg {
     width: 340px;
