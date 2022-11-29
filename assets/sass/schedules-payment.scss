@@ -101,6 +101,7 @@
 
                         .faces {
                             width: 100%;
+                            margin-top: -20px;
 
                             &.flipped {
                                 transform: translate(-76px) rotateY(180deg);
